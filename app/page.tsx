@@ -40,12 +40,12 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative" id="main-page">
+      <div className="relative bg-slate-900" id="main-page">
         {mouse.pageX && mouse.pageY && (
           <span
             className="lg:absolute hidden lg:inline pointer-events-none inset-0 "
             style={{
-              background: `radial-gradient(600px at ${mouse.pageX}px ${mouse.pageY}px,rgba(29, 78, 216, 0.15), transparent 90%)`,
+              background: `radial-gradient(600px at ${mouse.pageX}px ${mouse.pageY}px,rgba(29, 78, 216, 0.15), transparent 80%)`,
             }}
           ></span>
         )}
