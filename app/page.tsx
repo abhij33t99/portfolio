@@ -1,6 +1,6 @@
 "use client";
 
-import { motion as m, useInView, useScroll } from "framer-motion";
+import { useInView } from "framer-motion";
 import StaggeredText from "./components/StaggeredText";
 import About from "./components/About";
 import Project from "./components/Project";
