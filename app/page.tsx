@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import FadeIn from "./components/FadeIn";
 import useMouse from "@react-hook/mouse-position";
 import Contact from "./components/Contact";
+import Link from "next/link";
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -64,7 +65,7 @@ export default function Home() {
               className="lg:w-[300px]"
               staggeredDuration={0.05}
             />
-            <div className="lg:block hidden">
+            <div className="lg:block hidden space-y-5">
               <div className="flex flex-row gap-2 justify-start items-center">
                 <FadeIn>
                   <hr
@@ -114,7 +115,7 @@ export default function Home() {
 
             <Contact className="lg:absolute lg:bottom-24" />
           </div>
-          <div className="lg:pt-40 pt-2 flex flex-col gap-5 lg:w-[600px] p-2">
+          <div className="lg:pt-40 pt-2 lg:w-[600px] p-2">
             <div className="flex flex-col gap-32">
               <div ref={aboutRef}>
                 <About />
@@ -122,10 +123,18 @@ export default function Home() {
               <div ref={experienceRef}>
                 <Experience />
               </div>
-              <div ref={projectRef} className="mb-40">
+              <div ref={projectRef} className="">
                 <Project />
               </div>
-              {/* <div className=""></div> */}
+              <div className="pt-20">
+                Built with NextJs and Tailwind. Design inspired from{" "}
+                <Link
+                  className=" hover:text-white"
+                  href={"https://brittanychiang.com/"}
+                >
+                  https://brittanychiang.com
+                </Link>
+              </div>
             </div>
           </div>
         </div>
